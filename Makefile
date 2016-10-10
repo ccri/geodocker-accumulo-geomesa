@@ -1,7 +1,4 @@
-BASE := $(subst -, ,$(notdir ${CURDIR}))
-ORG  := $(word 1, ${BASE})
-REPO := $(word 2, ${BASE})-$(word 3, ${BASE})
-IMG  := quay.io/${ORG}/${REPO}
+IMG  := quay.io/ccri/accumulo-geomesa-m3.2xlarge
 GEOMESA_VERSION := 1.2.6
 DIST_TARBALL := tarballs/geomesa-dist-${GEOMESA_VERSION}-bin.tar.gz
 TOOL_TARBALL := geomesa-tools-${GEOMESA_VERSION}-bin.tar.gz
